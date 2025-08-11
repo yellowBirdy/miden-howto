@@ -1,0 +1,23 @@
+
+
+# ERRORS
+# =================================================================================================
+
+const.ERR_P2ID_WRONG_NUMBER_OF_INPUTS="Error: Subzero note is printing an error"
+
+
+
+begin
+
+    push.1
+    # => [1]
+    # make sure the number of inputs is 2
+    eq.1 
+    # => [1]
+    
+    assert.err=ERR_P2ID_WRONG_NUMBER_OF_INPUTS
+    # => []
+
+    
+
+end
